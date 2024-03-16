@@ -1,5 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 4%;
+}
+
+.logo {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links ul li a:after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  margin: auto;
+  display: block;
+  background: blue;
+  transition: 1s;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  height: 600px;
+  padding: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-img {
+  -webkit-animation: morph 8s ease-in-out infinite;
+  animation: morph 8s ease-in-out infinite;
+  background-image: url(images/hero-image.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  height: 35rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 35rem;
+  margin-top: 60px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3.3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials i {
+  font-size: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.fa-brands.fa-github:hover {
+  color: #696666; /* Change the color as desired */
+}
+
+.fa-brands.fa-linkedin:hover {
+  color: #0077b5; /* Change the color as desired */
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.about-content {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  width: 500px;
+}
+
+.about-text h3 {
+  color: #147efb;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.about-text h4 {
+  color: #2d2e32;
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  color: #767676;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.projects {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  
+}
+
+.projects h2 {
+  margin-bottom: 30px;
+  color: #147efb;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.text-box {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.project-btn {
+  margin-left: 1px;
+  padding: 8px 16px;
+  background-color: none;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.fa-brands {
+  color: #333;
+  font-size: 24px;
+}
+
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+  max-width: 1150px;
+}
+
+.projects img {
+  width: 500px;
+}
+
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  margin-left: 20px;
+}
+
+.contact-text h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-text h4 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-text div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-text svg {
+  fill: none;
+  stroke: #333;
+  stroke-width: 2;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contact-text h3, .contact-text p {
+  color: #333;
+  margin: 0;
+}
+
+.contact-text p {
+  font-size: 16px;
 }

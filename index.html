@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>My Personal Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Personal Website</title>
 </head>
 <body>
-    <script src="script.js"></script>
+  <header>
+    <nav>
+      <a class="logo" id="#home" href="#home">najibdevs</a>
+      <div class="nav-links" sc>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-img"></div>
+      <div class="hero-text">
+        <h1>Front-End Software Developer 👋🏽</h1>
+        <p>Hi, I'm Najib Iman. A passionate Front-end Software Developer based in London, Uk. 📍</p>
+        <div class="socials">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="img">
+          <img src="images/about-img.webp" alt="Laptop on a desk with a cup tea and Ipad next to it">
+        </div>
+        <div class="about-text"> 
+          <h3>About Me 👨🏽‍💻</h3>
+          <h4>Front-End Developer<br>based in London, Uk 📍</h4>
+          <p>My name is Najib, and I'm a Frontend Developer. My passion is to create and develop a clean UI/UX for my users <br>My main stack currently is HTML/CSS in combination with JAVASCRIPT.</p>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects 🧩</h2>
+    <div class="project-content">
+      <img src="images/project1.png" />
+      <div class="text-box">
+        <h3>NBA Landing Page</h3>
+        <p>
+          This landing page was crafted with precision using HTML and CSS. It
+          has been meticulously designed for optimal display on desktop
+          &mobile interfaces, offering a visually engaging and interactive
+          experience.
+        </p>
+        <div class="flex">
+          <a href="https://github.com/najibdevs/nba-landing-page" target="_blank">
+              <i class="fa-brands fa-github"></i>
+          </a>            
+          <button class="project-btn"><a href="https://nba-landing-page.vercel.app/" target="_blank">Click here to view</a></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <div class="text-box">
+        <h3>Column Card</h3>
+        <p>
+          This landing page was crafted with precision using HTML and CSS. It
+          has been meticulously designed for optimal display on desktop
+          &mobile interfaces, offering a visually engaging and interactive
+          experience.
+        </p>
+        <div class="flex">
+          <a href="https://github.com/najibdevs/3-column-card" target="_blank">
+              <i class="fa-brands fa-github"></i>
+          </a> 
+          <button class="project-btn"><a href="https://3-column-card-alpha.vercel.app/" target="_blank">Click here to view</a></button>
+        </div>
+      </div>
+      <img src="images/project2.png" />
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-text"> 
+          <h3>Contact </h3>
+          <h4>Don't be shy! Hit me up! </h4>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-map-search"><path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path><path d="M9 4v13"></path><path d="M15 7v5"></path><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M20.2 20.2l1.8 1.8"></path></svg>
+            <div>
+              <h3>Location</h3>
+              <p>London, Uk</p>
+            </div>
+          </div>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-map-search"><path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path><path d="M9 4v13"></path><path d="M15 7v5"></path><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M20.2 20.2l1.8 1.8"></path></svg>
+            <div>
+              <h3>Mail</h3>
+              <p>najib.iman@student.moringaschool.com</p>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
